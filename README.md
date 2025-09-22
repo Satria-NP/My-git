@@ -1,2 +1,1 @@
-
-hasil Dari generate Ai 
+ Pemula 
