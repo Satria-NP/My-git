@@ -1,0 +1,41 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../image/bg.jpg");
+    background-size: cover;
+}
+
+nav {
+    background-color: rgba(240, 248, 255, 0);
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 1rem;
+    font-size: 18px;
+    font-weight: 900;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(0, 255, 255, 0);
+    padding-bottom: 10px;
+    text-shadow: none;
+    transition: text-shadow 0.3 ease;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid aqua;
+    text-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 30px aqua;
+}
