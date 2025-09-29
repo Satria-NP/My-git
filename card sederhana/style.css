@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* Overlay untuk meningkatkan keterbacaan teks */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+* html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+
+.card1 {
+    background-color: rgba(228, 231, 233, 0.185);
+    width: 300px;
+    height: 480px;
+    border-radius: 50px;
+    margin: 30px;
+    margin-top: 185px;
+    position: relative;
+    padding-bottom: 60px;
+    filter: drop-shadow(0 0 3px black) drop-shadow(0 0 3px black);
+}
+
+.card1> img {
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 35px;
+    border-radius: 25px;
+    filter: drop-shadow(0 0 2px #191919) drop-shadow(0 0 3px #191919);
+}
+
+.card1 h2 {
+    text-align: center;
+    font-weight: 700;
+    font-family: "Merriweather", serif;
+    color: whitesmoke;
+}
+
+.card1 p {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+
+button {
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.062);
+    font-size: 19px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0;
+    padding: 8px 20px;
+    width: 150px;
+}
+
+button:hover {
+    background-color: rgb(76, 122, 221);
+    color: whitesmoke;
+    cursor: pointer;
+}
